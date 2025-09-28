@@ -52,7 +52,7 @@ class Attention1(nn.Module):
 
         y = y.squeeze(-1).transpose(-1, -2)
 
-        y = self.conv1d(y)
+        y = self.conv(y)
 
         y = y.transpose(-1, -2).unsqueeze(-1)
 
