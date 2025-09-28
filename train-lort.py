@@ -337,12 +337,12 @@ def main():
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--group_name', default=None)
-    parser.add_argument('--input_clean_wavs_dir', required=True)
-    parser.add_argument('--input_noisy_wavs_dir', required=True)
-    parser.add_argument('--input_clean_wavs_dir2', required=True)
-    parser.add_argument('--input_noisy_wavs_dir2', required=True)
-    parser.add_argument('--input_training_file', required=True)  # make_file_list.py
-    parser.add_argument('--input_validation_file', required=True)  # make_file_list.py
+    parser.add_argument('--input_clean_wavs_dir', required=True)  # clean_train wav document
+    parser.add_argument('--input_noisy_wavs_dir', required=True)  # noisy_train wav document
+    parser.add_argument('--input_clean_wavs_dir2', required=True)  # clean_validation wav document
+    parser.add_argument('--input_noisy_wavs_dir2', required=True)  # noisy_validation wav document
+    parser.add_argument('--input_training_file', required=True)  # run make_file_list.py
+    parser.add_argument('--input_validation_file', required=True)  # run make_file_list.py
     parser.add_argument('--checkpoint_path', required=True)
     parser.add_argument('--config', default='config.json')
     parser.add_argument('--training_epochs', default=200, type=int)
