@@ -17,13 +17,13 @@ python train-lort.py
 ```
 
 ## Training with your own data
-Step 1: Generate dataset list files
-Run make_file_list.py first, this script generates structured dataset list files
+### Step 1: Generate dataset list files
+To prepare data for model training, first run make_file_list.py.
 ```
 python make_file_list.py
 ```
-Step 2: Start training with train-lort.py
-Add the obtained txt file to train-lort.py to start the training
+### Step 2: Start training with train-lort.py
+After getting the list files (e.g., train.txt for training data, validation.txt for validation data), specify the file paths via command-line parameters to start training.
 ```
 python train-lort.py --input_training_file ./train.txt --input_validation_file ./validation.txt
 ```
