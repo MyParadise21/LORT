@@ -17,10 +17,13 @@ python train-lort.py
 ```
 
 ## Training with your own data
-Generate dataset script using make_file_list.py
-```
+Step 1: Generate dataset list files
+Run make_file_list.py first, this script generates structured dataset list files
 python make_file_list.py
-```
+
+Step 2: Start training with train-lort.py
+Add the obtained txt file to train-lort.py to start the training
+python train-lort.py --input_training_file ./train.txt --input_validation_file ./validation.txt
 
 ## Inference
 ```
