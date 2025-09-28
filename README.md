@@ -13,7 +13,7 @@ Achieving superior enhancement performance while maintaining a low parameter cou
 ## Training
 For single GPU (Recommend), LORT needs at least 12GB GPU memery.
 ```
-python train-lort.py
+python train_lort.py
 ```
 
 ## Training with your own data
@@ -25,7 +25,7 @@ python make_file_list.py
 ### Step 2: Start training with train-lort.py
 After getting the list files (e.g., train.txt for training data, validation.txt for validation data), specify the file paths via command-line parameters to start training.
 ```
-python train-lort.py --input_training_file ./train.txt --input_validation_file ./validation.txt
+python train_lort.py --input_training_file ./train.txt --input_validation_file ./validation.txt
 ```
 ## Inference
 ```
